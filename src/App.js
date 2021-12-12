@@ -6,7 +6,7 @@ import alanBtn from '@alan-ai/alan-sdk-web';
 import { NewsCards, Modal } from './components';
 import useStyles from './styles';
 
-const alanKey = '922501f588af63023a69dcde4a8502932e956eca572e1d8b807a3e2338fdd0dc/stage'
+const alanKey = process.env.ALAN_KEY;
 
 const App = () => {
   const [activeArticle, setActiveArticle] = useState(0);
